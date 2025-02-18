@@ -1,33 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
 
-<svg width="80" height="80" viewBox="0 0 11 10" version="1.1" id="svg5"
-   sodipodi:docname="PowerTower.svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-   <sodipodi:namedview id="namedview29" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25"
-      inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1"
-      inkscape:document-units="mm" showgrid="false" />
-   <defs id="defs2" />
-   <g id="layer1" transform="matrix(1.2914054,0,0,1.2914054,-44.349104,-250.92541)"
-      inkscape:export-filename="../8bf6bfef/g329812.svg" inkscape:export-xdpi="96" inkscape:export-ydpi="96">
-      <g id="g1611" transform="matrix(0.1732213,0,0,0.1732213,28.393016,160.64652)">
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
 
-         <circle style="fill:yellow;stroke:#000000;stroke-width:0.495712;stroke-dasharray:none;stroke-dashoffset:0"
-            id="path3174" cx="58" cy="213" r="10" />
+  <!-- Base del aerogenerador (rectángulo en la parte inferior) -->
+  <rect x="5" y="45" width="40" height="3" fill="black" />
 
-         <path style="fill:#87decd;stroke:#000000;stroke-width:0.51;stroke-dasharray:none;stroke-dashoffset:0"
-            d="m 58,210  L84.5 210 L58 205 Z" id="path368-6-9" />
-         <path
-            style="fill:#87decd;stroke:#000000;stroke-width:0.5;stroke-dasharray:none;stroke-dashoffset:0;stroke-linejoin:round"
-            d="m 58,210  L32.5 210 L58 205 Z" id="path368-6-9" />
-         <rect width="5" height="10" x="55.5" y="210"
-            style="fill:#b3b3b3;stroke:#000000;stroke-width:1;stroke-dasharray:none;stroke-dashoffset:0" />
-         <path style="fill:#b3b3b3;stroke:#000000;stroke-width:1;stroke-dasharray:none;stroke-dashoffset:0"
-            d="m 53,210  q 5 -10 10 0 Z" id="path368-6-9" />
+  <!-- Tubo del aerogenerador (más corto y con base más ancha) -->
+  <path d="M24.5,16 L21.5,47 L28.5,47 L25.5,16 Z" fill="white" stroke="black" stroke-width="1.5" />
 
+  <!-- Base del motor -->
+  <rect x="20" y="16" width="9" height="9" fill="white" stroke="black" stroke-width="1" rx="1" ry="1" />
 
+  <!-- Aspa 1 - Apuntando hacia arriba (más ancha) -->
+  <path id="aspa1" d="M26.5,19 v-22 h-2 l-9,15 L24.5,19 Z" fill="white" stroke="black" stroke-width="1" />
+  <path id="aspa1-sing" d="M26.5,7 v-10 h-2 l-5.5,9" fill="red" stroke="black" stroke-width="1" />
 
-      </g>
-   </g>
+  <!-- Aspa 2 - Rotada 120 grados -->
+  <use href="#aspa1" transform="rotate(120 25 20)" />
+  <use href="#aspa1-sing" transform="rotate(120 25 20)" />
+
+  <!-- Aspa 3 - Rotada 240 grados -->
+  <use href="#aspa1" transform="rotate(240 25 20)" />
+  <use href="#aspa1-sing" transform="rotate(240 25 20)" />
+
+  <!-- Círculo en el centro de las aspas -->
+  <circle cx="25" cy="20" r="3" fill="lightgrey" stroke="black" stroke-width="0.6" />
 </svg>
